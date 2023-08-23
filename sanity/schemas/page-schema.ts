@@ -4,7 +4,6 @@ const page = {
     type: "document",
     fields: [
         {
-
             name: "title",
             title: "Title",
             type: "string"
@@ -13,20 +12,17 @@ const page = {
             name: "slug",
             title: "Slug",
             type: "slug",
-            options: {
-                source: "title",
-                maxLength: 96,
-            }
+            options: { source: "title", maxLength: 96 }
         },
         {
             name: "content",
             title: "Content",
             type: "array",
-            of: [{
-                type: "block"
-            }]
+            of: [
+                { type: "block" }
+            ]
         }
     ]
 }
 
-export default page
+export default page;
